@@ -154,7 +154,7 @@ body {
 /* Grid de pictogramas */
 .pictogram-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -168,6 +168,12 @@ body {
 @media (min-width: 768px) {
     .pictogram-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .pictogram-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
