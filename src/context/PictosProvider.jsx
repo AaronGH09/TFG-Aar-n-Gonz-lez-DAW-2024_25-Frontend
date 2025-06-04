@@ -17,7 +17,7 @@ export const PictosProvider = ({ children }) => {
     const [frase, setFrase] = useState('');
     const [pictogramas, setPictogramas] = useState([]);
     const pictogramasRef = useRef(null); //Se usa para hacer referencia a alguna parte de html para poder plasmarla como imagen o pdf
-    const urlWord = "http://localhost:8081/api/arasaac/ids?palabra=";
+    const urlWord = "https://pictogramas-backend-production.up.railway.app/api/arasaac/ids?palabra=";
 
     /* Esta función se encarga de dividir la frase recibida en palabras y realizar una iteración para consultar al backend por cada una de ellas. 
     Por cada palabra, se hace una petición a la API para obtener los pictogramas asociados a esta. En caso de que no haya resultados o haya ocurrido un error, 
