@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Inicio } from './pages/Inicio';
-import { Juego } from "./pages/juego";
+import Juego from "./pages/Juego";
 import { PictosProvider } from "./context/PictosProvider";
 import './index.css'
 
